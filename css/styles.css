@@ -1,0 +1,120 @@
+:root {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  --user-card-width: 300px;
+  --user-card-color: #9799a5;
+  --user-card-bg-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background-image: url(https://oir.mobi/uploads/posts/2021-02/1612180212_5-p-zadnii-fon-dlya-pk-7.jpg);
+  background-size: cover;
+  object-fit: cover;
+  min-height: 800px;
+}
+
+.container-user-card {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user-card {
+  flex-basis: 250px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  border-radius: 20px;
+  background-color: var(--user-card-bg-color);
+  min-width: 200px;
+  max-width: var(--user-card-width);
+}
+
+.header-user-card {
+  padding: 15px;
+}
+
+.header-user-card > h1 + p {
+  padding-top: 15px;
+  color: var(--user-card-color);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.header-user-card > p {
+  padding-top: 5px;
+  color: var(--user-card-color);
+  font-size: 0.7rem;
+}
+
+.header-user-card > h1 {
+  padding-top: 35px;
+  font-weight: bold;
+}
+
+.header-user-card i {
+  padding: 5px;
+}
+
+.container-photo-user {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.photo-user {
+  width: calc(0.25 * var(--user-card-width));
+  height: calc(0.25 * var(--user-card-width));
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--user-card-bg-color);
+  padding: 3px;
+  position: absolute;
+  top: -45px;
+}
+
+.header-user-card > i {
+  background-color: var(--color-bg-one);
+  position: relative;
+  bottom: 10px;
+  border-radius: 50%;
+}
+
+.followers {
+  margin: 0 15px;
+  padding-top: 15px;
+  border-top: 1px solid var(--user-card-color);
+  color: var(--user-card-color);
+  overflow: hidden;
+}
+
+.followers > h2 {
+  padding-bottom: 5px;
+}
+
+.followers img {
+  width: calc(0.1 * var(--user-card-width));
+  height: calc(0.1 * var(--user-card-width));
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.social-network {
+  margin-top: auto;
+  margin-bottom: 10px;
+  padding-top: 30px;
+}
+
+.social-network a {
+  color: var(--user-card-color);
+  padding: 0 5px;
+}
+
+.link-social {
+  border-right: 1px solid var(--user-card-color);
+}
