@@ -75,10 +75,10 @@
   background: #50DAE4;
   padding: 3px;
   position: absolute;
-  top: -50px;
+  top: calc(-0.125 * var(--user-card-width) - 15px);
   box-shadow: 0 0 0 3px var(--user-card-bg-color);
 }
-
+`
 .header-user-card > i {
   background-color: var(--color-bg-one);
   position: relative;
